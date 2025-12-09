@@ -23,7 +23,7 @@ $myUpdateChecker = \Puc_v4_Factory::buildUpdateChecker(
     __FILE__,
     'wc-attributes-plugin'
 );
-
+$myUpdateChecker->setBranch('main');
 require_once ATTRIBUTES_PLUGIN_PATH.'core/admin-page.php';
 
 $admin_page = new AdminPage();
