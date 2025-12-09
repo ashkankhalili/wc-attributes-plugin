@@ -1,7 +1,5 @@
 <?php
 /**
- * Plugin Name
- *
  * @package   Attributes
  * @author    Ashkan Khalili
  * @copyright 2025 NovinWebSaz
