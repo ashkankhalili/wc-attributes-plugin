@@ -43,7 +43,7 @@ class AdminPage
     {
 
         $product_data_tabs['bulk_attributes'] = array(
-            'label' => __('Bulk Attributes', 'attributes'),
+            'label' => __('Bulk Attributes', 'woo-attributes'),
             'target' => 'bulk_attributes_block',
             'priority' => 60,
             'class'   => array(),
