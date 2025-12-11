@@ -68,6 +68,8 @@ class AdminPage
         wp_enqueue_style('fix-style', plugins_url('static/fix.css', __FILE__));
 
         //wp_register_script('jquery3.1.1', plugins_url('static/jquery.min.js', __FILE__), array(), null, false);
+		wp_register_script('jquery3.1.1','https://code.jquery.com/jquery-3.1.1.min.js',array(),null,true);
+
         wp_add_inline_script('jquery3.1.1', 'var jQuery3_1_1 = $.noConflict(true);');
         wp_enqueue_script('semantic-js', plugins_url('static/semantic.min.js', __FILE__), array('jquery3.1.1'));
     }
