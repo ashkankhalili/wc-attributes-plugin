@@ -21,7 +21,7 @@ class AdminPage
     {
         add_meta_box(
             'bulk_attributes',
-            __('تغییر ویژگی‌ها', 'attribute-plugin'),
+            __('تغییر ویژگی‌ها', 'woo-attributes'),
             array($this, 'attributesMetaBoxContent'),
             'product',
             'advanced',
