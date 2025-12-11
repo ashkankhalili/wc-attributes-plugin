@@ -3,7 +3,7 @@
     Plugin Name: Woo Attributes 
     Plugin URI: https://novinwebsaz.net/
     Description: This plugin makes changing attributes of products easier and much faster than the default products attribute manager on product edit page for woocommerce
-    Version: 1.1.1
+    Version: 1.1.2
     Author: Ashkan Khalili
     @copyright 2025 NovinWebSaz
     License   GPL-2.0-or-later
@@ -12,7 +12,7 @@ namespace Attributes;
 
 if (!defined('ATTRIBUTES_PLUGIN_PATH')) {
     define('ATTRIBUTES_PLUGIN_PATH', dirname(__FILE__).'/');
-    define('ATTRIBUTES_PLUGIN_VERSION', '1.1.1');
+    define('ATTRIBUTES_PLUGIN_VERSION', '1.1.2');
     define('ATTRIBUTES_PREFIX', 'attr');
 }
 
