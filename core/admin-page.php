@@ -63,13 +63,18 @@ class AdminPage
 
     public function enqueueScripts($hook_suffix)
     {
-        wp_enqueue_style('semantic-style-rtl', plugins_url('static/semantic.rtl.min.css', __FILE__));
-        wp_enqueue_style('rtl-style', plugins_url('static/style-rtl.css', __FILE__));
-        wp_enqueue_style('fix-style', plugins_url('static/fix.css', __FILE__));
+        
+        wp_enqueue_style('semantic-style-rtl',plugins_url( 'static/semantic.rtl.min.css', __FILE__ ),array(),ATTRIBUTES_PLUGIN_VERSION);
 
-        wp_register_script('jquery3.1.1','https://code.jquery.com/jquery-3.1.1.min.js',array(),null,true);
+        wp_enqueue_style('rtl-style',plugins_url( 'static/style-rtl.css',__FILE__ ),array(),ATTRIBUTES_PLUGIN_VERSION);
+
+        wp_enqueue_style('fix-style',plugins_url( 'static/fix.css', __FILE__ ),array(),ATTRIBUTES_PLUGIN_VERSION);
+
+        wp_register_script('jquery3.1.1','https://code.jquery.com/jquery-3.1.1.min.js',array(),ATTRIBUTES_PLUGIN_VERSION,true);
+
 
         wp_add_inline_script('jquery3.1.1', 'var jQuery3_1_1 = $.noConflict(true);');
         wp_enqueue_script('semantic-js', plugins_url('static/semantic.min.js', __FILE__), array('jquery3.1.1'));
+        
     }
 }
